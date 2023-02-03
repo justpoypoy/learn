@@ -108,7 +108,7 @@ Now run `terraform apply` to create the compute instance. Terraform will prompt 
 
 In addition to creating resources, Terraform can also make changes to those resources.
 
-```
+```diff
 resource "google_compute_instance" "vm_instance" {
    name         = "terraform-instance"
    machine_type = "f1-micro"
@@ -128,7 +128,7 @@ The prefix `~` means that Terraform will update the resource in-place. You can a
 
 A destructive change is a change that requires the provider to replace the existing resource rather than updating it. This usually happens because the cloud provider does not support updating the resource in the way described by your configuration.
 
-```
+```diff
 boot_disk {
      initialize_params {
 -      image = "debian-cloud/debian-11"

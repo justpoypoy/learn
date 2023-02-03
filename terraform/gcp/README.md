@@ -1,5 +1,7 @@
 # Terraform in provider Google Cloud
 
+source: [Terraform Website](https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/google-cloud-platform-build)
+
 ## Setup & Requirements
 
 1. Activation cloud shell
